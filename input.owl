@@ -1,0 +1,230 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#"
+     xml:base="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#completeIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#completeIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#TeamName"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Tournament"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#isHostOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#isHostOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Stadium"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#TeamName"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#isTeammateOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#isTeammateOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Player"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Player"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#manageAt -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#manageAt">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Manager"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#TeamName"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#playFor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#playFor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Player"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#TeamName"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#age -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#age">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#capacity -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#capacity">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Stadium"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#height -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#height">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Player"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#location -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#location">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Stadium"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#nationality -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#nationality">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#position -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#position">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Player"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#teamNameRegion -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#teamNameRegion">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#TeamName"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#tournameRegionName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#tournameRegionName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Tournament"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#weight -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#weight">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Player"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#League -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#League">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Tournament"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Manager -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Manager">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Person"/>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Player -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Player">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Pyramid -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Pyramid">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Tournament"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Stadium -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Stadium"/>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#TeamName -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#TeamName"/>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Tournament -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Tournament"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

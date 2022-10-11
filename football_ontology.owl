@@ -1,0 +1,1839 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#"
+     xml:base="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#completeIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#completeIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#TeamName"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Tournament"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#isHostOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#isHostOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Stadium"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#TeamName"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#isTeammateOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#isTeammateOf"/>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#manageAt -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#manageAt">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Manager"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#TeamName"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#playFor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#playFor">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#TeamName"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#age -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#age">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#capacity -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#capacity">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Stadium"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#height -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#height">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#location -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#location">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Stadium"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#nationality -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#nationality">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#position -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#position">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#teamNameRegion -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#teamNameRegion">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#TeamName"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#tournameRegionName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#tournameRegionName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Tournament"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#weight -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#weight">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dbpedia.org/ontology/SoccerPlayer -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/SoccerPlayer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#League -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#League">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Tournament"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Manager -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Manager">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Person"/>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Pyramid -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Pyramid">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Tournament"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Stadium -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Stadium"/>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#TeamName -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#TeamName"/>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Tournament -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Tournament"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Africa_Cup_of_Nations -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Africa_Cup_of_Nations">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Tournament"/>
+        <teamNameRegion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">International</teamNameRegion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Ajax -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Ajax">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#TeamName"/>
+        <completeIn rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Dutch_Super_Cup"/>
+        <completeIn rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Eredivisie"/>
+        <completeIn rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#KNVB_Cup"/>
+        <teamNameRegion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Netherlands</teamNameRegion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Aleksandar_Mitrovic -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Aleksandar_Mitrovic">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/SoccerPlayer"/>
+        <playFor rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Fulham"/>
+        <playFor rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Serbia"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#int">28</age>
+        <height rdf:datatype="http://www.w3.org/2001/XMLSchema#int">189</height>
+        <position rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Forward</position>
+        <weight rdf:datatype="http://www.w3.org/2001/XMLSchema#int">90</weight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Alexis_Mac_Allister -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Alexis_Mac_Allister">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/SoccerPlayer"/>
+        <playFor rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Argentina"/>
+        <playFor rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Argentina_U23"/>
+        <playFor rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Brighton_&amp;_Hove_Albion"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#int">23</age>
+        <height rdf:datatype="http://www.w3.org/2001/XMLSchema#int">176</height>
+        <position rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Midfielder</position>
+        <weight rdf:datatype="http://www.w3.org/2001/XMLSchema#int">72</weight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Allan_Saint-Maximin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Allan_Saint-Maximin">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/SoccerPlayer"/>
+        <playFor rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Newcastle_United"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#int">25</age>
+        <height rdf:datatype="http://www.w3.org/2001/XMLSchema#int">173</height>
+        <position rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Forward</position>
+        <weight rdf:datatype="http://www.w3.org/2001/XMLSchema#int">67</weight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Anfield -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Anfield">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Stadium"/>
+        <isHostOf rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Liverpool"/>
+        <capacity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">53394</capacity>
+        <location rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Liverpool (Anfield)</location>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Anthony_Martial -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Anthony_Martial">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/SoccerPlayer"/>
+        <playFor rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#France"/>
+        <playFor rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Manchester_United"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#int">26</age>
+        <height rdf:datatype="http://www.w3.org/2001/XMLSchema#int">181</height>
+        <position rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Forward</position>
+        <weight rdf:datatype="http://www.w3.org/2001/XMLSchema#int">76</weight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Antonio_Conte -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Antonio_Conte">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Manager"/>
+        <manageAt rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Tottenham_Hotspur"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Antony -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Antony">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/SoccerPlayer"/>
+        <playFor rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Ajax"/>
+        <playFor rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Brazil"/>
+        <playFor rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Brazil_U23"/>
+        <playFor rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Manchester_United"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#int">22</age>
+        <height rdf:datatype="http://www.w3.org/2001/XMLSchema#int">174</height>
+        <position rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Forward</position>
+        <weight rdf:datatype="http://www.w3.org/2001/XMLSchema#int">63</weight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Argentina -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Argentina">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#TeamName"/>
+        <completeIn rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Copa_America"/>
+        <completeIn rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Int._Friendly"/>
+        <teamNameRegion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Argentina</teamNameRegion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Argentina_U23 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Argentina_U23">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#TeamName"/>
+        <completeIn rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Summer_Olympics_Qualifiers"/>
+        <teamNameRegion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Argentina</teamNameRegion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Armel_Bella-Kotchap -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Armel_Bella-Kotchap">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/SoccerPlayer"/>
+        <playFor rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Germany"/>
+        <playFor rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Southampton"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#int">20</age>
+        <height rdf:datatype="http://www.w3.org/2001/XMLSchema#int">190</height>
+        <position rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Defender</position>
+        <weight rdf:datatype="http://www.w3.org/2001/XMLSchema#int">87</weight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Arsenal -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Arsenal">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#TeamName"/>
+        <completeIn rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Club_Friendlies"/>
+        <completeIn rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Europa_League"/>
+        <completeIn rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Premier_League"/>
+        <teamNameRegion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">England</teamNameRegion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Ashley_Young -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Ashley_Young">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/SoccerPlayer"/>
+        <playFor rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Aston_Villa"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#int">37</age>
+        <height rdf:datatype="http://www.w3.org/2001/XMLSchema#int">175</height>
+        <position rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Defender</position>
+        <weight rdf:datatype="http://www.w3.org/2001/XMLSchema#int">65</weight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Asmir_Begovic -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Asmir_Begovic">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/SoccerPlayer"/>
+        <playFor rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Everton"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#int">35</age>
+        <height rdf:datatype="http://www.w3.org/2001/XMLSchema#int">199</height>
+        <position rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Goalkeeper</position>
+        <weight rdf:datatype="http://www.w3.org/2001/XMLSchema#int">101</weight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Aston_Villa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Aston_Villa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#TeamName"/>
+        <completeIn rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Club_Friendlies"/>
+        <completeIn rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#League_Cup"/>
+        <completeIn rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Premier_League"/>
+        <teamNameRegion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">England</teamNameRegion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Belgium -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Belgium">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#TeamName"/>
+        <completeIn rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#European_Championship"/>
+        <completeIn rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Int._Friendly"/>
+        <completeIn rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#UEFA_Nations_League_A"/>
+        <completeIn rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#World_Cup_Qualification_UEFA"/>
+        <teamNameRegion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Belgium</teamNameRegion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Borussia_Dortmund -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Borussia_Dortmund">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#TeamName"/>
+        <completeIn rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Club_Friendlies"/>
+        <teamNameRegion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Germany</teamNameRegion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Bournemouth -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Bournemouth">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#TeamName"/>
+        <completeIn rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#League_Cup"/>
+        <completeIn rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Premier_League"/>
+        <teamNameRegion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">England</teamNameRegion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Brazil -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Brazil">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#TeamName"/>
+        <completeIn rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Copa_America"/>
+        <completeIn rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Int._Friendly"/>
+        <teamNameRegion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Brazil</teamNameRegion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Brazil_U23 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Brazil_U23">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#TeamName"/>
+        <completeIn rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Summer_Olympics_Qualifiers"/>
+        <teamNameRegion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Brazil</teamNameRegion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Brendan_Rodgers -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Brendan_Rodgers">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Manager"/>
+        <manageAt rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Leicester_City"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Brentford -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Brentford">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#TeamName"/>
+        <completeIn rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#League_Cup"/>
+        <completeIn rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Premier_League"/>
+        <teamNameRegion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">England</teamNameRegion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Brentford_Community_Stadium -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Brentford_Community_Stadium">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Stadium"/>
+        <isHostOf rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Brentford"/>
+        <capacity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">17250</capacity>
+        <location rdf:datatype="http://www.w3.org/2001/XMLSchema#string">London (Brentford)</location>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Champions_League -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Champions_League">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Tournament"/>
+        <teamNameRegion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Europe</teamNameRegion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Chelsea -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Chelsea">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#TeamName"/>
+        <completeIn rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Champions_League"/>
+        <completeIn rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Club_Friendlies"/>
+        <completeIn rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#FIFA_Club_World_Cup"/>
+        <completeIn rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Premier_League"/>
+        <teamNameRegion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">England</teamNameRegion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Christian_Nørgaard -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Christian_Nørgaard">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/SoccerPlayer"/>
+        <playFor rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Brentford"/>
+        <playFor rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Denmark"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#int">28</age>
+        <height rdf:datatype="http://www.w3.org/2001/XMLSchema#int">187</height>
+        <position rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Midfielder</position>
+        <weight rdf:datatype="http://www.w3.org/2001/XMLSchema#int">76</weight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#City_Ground -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#City_Ground">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Stadium"/>
+        <isHostOf rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Nottingham_Forest"/>
+        <capacity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">30445</capacity>
+        <location rdf:datatype="http://www.w3.org/2001/XMLSchema#string">West Bridgford</location>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#City_of_Manchester_Stadium -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#City_of_Manchester_Stadium">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Stadium"/>
+        <isHostOf rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Manchester_City"/>
+        <capacity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">53400</capacity>
+        <location rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Manchester (Bradford)</location>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Club_Friendlies -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Club_Friendlies">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Tournament"/>
+        <teamNameRegion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">International</teamNameRegion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Colombia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Colombia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#TeamName"/>
+        <completeIn rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Copa_America"/>
+        <teamNameRegion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Colombia</teamNameRegion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Community_Shield -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Community_Shield">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Tournament"/>
+        <teamNameRegion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">England</teamNameRegion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Conference_League -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Conference_League">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Tournament"/>
+        <teamNameRegion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Europe</teamNameRegion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Copa_America -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Copa_America">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Tournament"/>
+        <teamNameRegion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">International</teamNameRegion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Craven_Cottage -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Craven_Cottage">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Stadium"/>
+        <isHostOf rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Fulham"/>
+        <capacity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">22384</capacity>
+        <location rdf:datatype="http://www.w3.org/2001/XMLSchema#string">London (Fulham)</location>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Crystal_Palace -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Crystal_Palace">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#TeamName"/>
+        <completeIn rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Club_Friendlies"/>
+        <completeIn rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Premier_League"/>
+        <teamNameRegion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">England</teamNameRegion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Czech_Republic -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Czech_Republic">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#TeamName"/>
+        <completeIn rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#European_Championship"/>
+        <completeIn rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Int._Friendly"/>
+        <completeIn rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#UEFA_Nations_League_A"/>
+        <completeIn rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#World_Cup_Qualification_UEFA"/>
+        <teamNameRegion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Czech Republic</teamNameRegion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#David_Moyes -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#David_Moyes">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Manager"/>
+        <manageAt rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#West_Ham_United"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Dean_Court -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Dean_Court">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Stadium"/>
+        <isHostOf rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Bournemouth"/>
+        <capacity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">11307</capacity>
+        <location rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bournemouth</location>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Declan_Rice -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Declan_Rice">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/SoccerPlayer"/>
+        <playFor rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#England"/>
+        <playFor rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#West_Ham_United"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#int">23</age>
+        <height rdf:datatype="http://www.w3.org/2001/XMLSchema#int">185</height>
+        <position rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Midfielder</position>
+        <weight rdf:datatype="http://www.w3.org/2001/XMLSchema#int">76</weight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Denmark -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Denmark">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#TeamName"/>
+        <completeIn rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#European_Championship"/>
+        <completeIn rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Int._Friendly"/>
+        <completeIn rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#UEFA_Nations_League_A"/>
+        <completeIn rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#World_Cup_Qualification_UEFA"/>
+        <teamNameRegion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Denmark</teamNameRegion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Dutch_Super_Cup -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Dutch_Super_Cup">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Tournament"/>
+        <teamNameRegion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Netherlands</teamNameRegion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Eddie_Howe -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Eddie_Howe">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Manager"/>
+        <manageAt rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Newcastle_United"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Elland_Road -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Elland_Road">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Stadium"/>
+        <isHostOf rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Leeds_United"/>
+        <capacity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">37608</capacity>
+        <location rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Leeds</location>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Emiliano_Martínez -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Emiliano_Martínez">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/SoccerPlayer"/>
+        <playFor rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Argentina"/>
+        <playFor rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Aston_Villa"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#int">30</age>
+        <height rdf:datatype="http://www.w3.org/2001/XMLSchema#int">195</height>
+        <position rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Goalkeeper</position>
+        <weight rdf:datatype="http://www.w3.org/2001/XMLSchema#int">88</weight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Emirates_Stadium -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Emirates_Stadium">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Stadium"/>
+        <isHostOf rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Arsenal"/>
+        <capacity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">60704</capacity>
+        <location rdf:datatype="http://www.w3.org/2001/XMLSchema#string">London (Holloway)</location>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#England -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#England">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#TeamName"/>
+        <completeIn rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#European_Championship"/>
+        <completeIn rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Int._Friendly"/>
+        <completeIn rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#UEFA_Nations_League_A"/>
+        <completeIn rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#World_Cup_Qualification_UEFA"/>
+        <teamNameRegion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">England</teamNameRegion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Eredivisie -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Eredivisie">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Tournament"/>
+        <teamNameRegion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Netherlands</teamNameRegion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Erik_ten_Hag -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Erik_ten_Hag">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Manager"/>
+        <manageAt rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Manchester_United"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Erling_Haaland -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Erling_Haaland">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/SoccerPlayer"/>
+        <playFor rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Borussia_Dortmund"/>
+        <playFor rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Manchester_City"/>
+        <playFor rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Norway"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#int">22</age>
+        <height rdf:datatype="http://www.w3.org/2001/XMLSchema#int">194</height>
+        <position rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Forward</position>
+        <weight rdf:datatype="http://www.w3.org/2001/XMLSchema#int">88</weight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Europa_League -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Europa_League">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Tournament"/>
+        <teamNameRegion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Europe</teamNameRegion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#European_Championship -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#European_Championship">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Tournament"/>
+        <teamNameRegion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">International</teamNameRegion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Everton -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Everton">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#TeamName"/>
+        <completeIn rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Club_Friendlies"/>
+        <completeIn rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#League_Cup"/>
+        <completeIn rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Premier_League"/>
+        <teamNameRegion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">England</teamNameRegion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#FIFA_Club_World_Cup -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#FIFA_Club_World_Cup">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Tournament"/>
+        <teamNameRegion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">International</teamNameRegion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Falmer_Stadium -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Falmer_Stadium">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Stadium"/>
+        <isHostOf rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Brighton_&amp;_Hove_Albion"/>
+        <capacity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">31800</capacity>
+        <location rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Falmer</location>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#France -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#France">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#TeamName"/>
+        <completeIn rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#World_Cup_Qualification_UEFA"/>
+        <teamNameRegion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">France</teamNameRegion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Frank_Lampard -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Frank_Lampard">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Manager"/>
+        <manageAt rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Everton"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Fulham -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Fulham">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#TeamName"/>
+        <completeIn rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Premier_League"/>
+        <teamNameRegion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">England</teamNameRegion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Gabriel_Jesus -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Gabriel_Jesus">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/SoccerPlayer"/>
+        <playFor rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Arsenal"/>
+        <playFor rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Brazil"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#int">25</age>
+        <height rdf:datatype="http://www.w3.org/2001/XMLSchema#int">175</height>
+        <position rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Forward</position>
+        <weight rdf:datatype="http://www.w3.org/2001/XMLSchema#int">73</weight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Gabriel_Martinelli -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Gabriel_Martinelli">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/SoccerPlayer"/>
+        <playFor rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Arsenal"/>
+        <playFor rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Brazil"/>
+        <playFor rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Brazil_U23"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#int">21</age>
+        <height rdf:datatype="http://www.w3.org/2001/XMLSchema#int">178</height>
+        <position rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Forward</position>
+        <weight rdf:datatype="http://www.w3.org/2001/XMLSchema#int">75</weight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Germany -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Germany">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#TeamName"/>
+        <completeIn rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#UEFA_Nations_League_A"/>
+        <teamNameRegion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Germany</teamNameRegion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Goodison_Park -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Goodison_Park">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Stadium"/>
+        <isHostOf rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Everton"/>
+        <capacity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">39414</capacity>
+        <location rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Liverpool (Walton)</location>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Graham_Potter -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Graham_Potter">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Manager"/>
+        <manageAt rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Chelsea"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Harry_Kane -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Harry_Kane">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/SoccerPlayer"/>
+        <playFor rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#England"/>
+        <playFor rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Tottenham_Hotspur"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#int">29</age>
+        <height rdf:datatype="http://www.w3.org/2001/XMLSchema#int">188</height>
+        <position rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Forward</position>
+        <weight rdf:datatype="http://www.w3.org/2001/XMLSchema#int">86</weight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Int._Friendly -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Int._Friendly">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Tournament"/>
+        <teamNameRegion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">International</teamNameRegion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Ivan_Toney -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Ivan_Toney">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/SoccerPlayer"/>
+        <playFor rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Brentford"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#int">26</age>
+        <height rdf:datatype="http://www.w3.org/2001/XMLSchema#int">179</height>
+        <position rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Forward</position>
+        <weight rdf:datatype="http://www.w3.org/2001/XMLSchema#int">70</weight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Ivory_Coast -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Ivory_Coast">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#TeamName"/>
+        <completeIn rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Africa_Cup_of_Nations"/>
+        <completeIn rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Int._Friendly"/>
+        <teamNameRegion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ivory Coast</teamNameRegion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Jack_Harrison -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Jack_Harrison">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/SoccerPlayer"/>
+        <playFor rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Leeds_United"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#int">25</age>
+        <height rdf:datatype="http://www.w3.org/2001/XMLSchema#int">175</height>
+        <position rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Midfielder</position>
+        <weight rdf:datatype="http://www.w3.org/2001/XMLSchema#int">70</weight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#James_Maddison -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#James_Maddison">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/SoccerPlayer"/>
+        <playFor rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Leicester_City"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#int">25</age>
+        <height rdf:datatype="http://www.w3.org/2001/XMLSchema#int">175</height>
+        <position rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Midfielder</position>
+        <weight rdf:datatype="http://www.w3.org/2001/XMLSchema#int">73</weight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#James_Ward-Prowse -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#James_Ward-Prowse">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/SoccerPlayer"/>
+        <playFor rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#England"/>
+        <playFor rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Southampton"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#int">27</age>
+        <height rdf:datatype="http://www.w3.org/2001/XMLSchema#int">173</height>
+        <position rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Midfielder</position>
+        <weight rdf:datatype="http://www.w3.org/2001/XMLSchema#int">66</weight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Jesse_Marsch -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Jesse_Marsch">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Manager"/>
+        <manageAt rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Leeds_United"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Joachim_Andersen -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Joachim_Andersen">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/SoccerPlayer"/>
+        <playFor rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Crystal_Palace"/>
+        <playFor rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Denmark"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#int">26</age>
+        <height rdf:datatype="http://www.w3.org/2001/XMLSchema#int">192</height>
+        <position rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Defender</position>
+        <weight rdf:datatype="http://www.w3.org/2001/XMLSchema#int">90</weight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Joelinton -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Joelinton">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/SoccerPlayer"/>
+        <playFor rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Newcastle_United"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#int">26</age>
+        <height rdf:datatype="http://www.w3.org/2001/XMLSchema#int">186</height>
+        <position rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Forward</position>
+        <weight rdf:datatype="http://www.w3.org/2001/XMLSchema#int">81</weight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Jordan_Pickford -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Jordan_Pickford">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/SoccerPlayer"/>
+        <playFor rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#England"/>
+        <playFor rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Everton"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#int">28</age>
+        <height rdf:datatype="http://www.w3.org/2001/XMLSchema#int">185</height>
+        <position rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Goalkeeper</position>
+        <weight rdf:datatype="http://www.w3.org/2001/XMLSchema#int">77</weight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#José_Sá -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#José_Sá">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/SoccerPlayer"/>
+        <playFor rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Wolves"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#int">29</age>
+        <height rdf:datatype="http://www.w3.org/2001/XMLSchema#int">192</height>
+        <position rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Goalkeeper</position>
+        <weight rdf:datatype="http://www.w3.org/2001/XMLSchema#int">84</weight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#João_Palhinha -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#João_Palhinha">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/SoccerPlayer"/>
+        <playFor rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Fulham"/>
+        <playFor rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Portugal"/>
+        <playFor rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Sporting"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#int">27</age>
+        <height rdf:datatype="http://www.w3.org/2001/XMLSchema#int">190</height>
+        <position rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Midfielder</position>
+        <weight rdf:datatype="http://www.w3.org/2001/XMLSchema#int">85</weight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Jürgen_Klopp -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Jürgen_Klopp">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Manager"/>
+        <manageAt rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Liverpool"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#KNVB_Cup -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#KNVB_Cup">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Tournament"/>
+        <teamNameRegion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Netherlands</teamNameRegion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Kevin_De_Bruyne -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Kevin_De_Bruyne">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/SoccerPlayer"/>
+        <playFor rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Belgium"/>
+        <playFor rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Manchester_City"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#int">31</age>
+        <height rdf:datatype="http://www.w3.org/2001/XMLSchema#int">181</height>
+        <position rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Midfielder</position>
+        <weight rdf:datatype="http://www.w3.org/2001/XMLSchema#int">68</weight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#King_Power_Stadium -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#King_Power_Stadium">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Stadium"/>
+        <isHostOf rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Leicester_City"/>
+        <capacity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">32262</capacity>
+        <location rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Leicester</location>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#League_Cup -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#League_Cup">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Tournament"/>
+        <teamNameRegion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">England</teamNameRegion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Leandro_Trossard -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Leandro_Trossard">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/SoccerPlayer"/>
+        <playFor rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Belgium"/>
+        <playFor rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Brighton_&amp;_Hove_Albion"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#int">27</age>
+        <height rdf:datatype="http://www.w3.org/2001/XMLSchema#int">171</height>
+        <position rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Forward</position>
+        <weight rdf:datatype="http://www.w3.org/2001/XMLSchema#int">61</weight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Leeds_United -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Leeds_United">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#TeamName"/>
+        <completeIn rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Club_Friendlies"/>
+        <completeIn rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#League_Cup"/>
+        <completeIn rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Premier_League"/>
+        <teamNameRegion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">England</teamNameRegion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Leicester_City -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Leicester_City">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#TeamName"/>
+        <completeIn rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Club_Friendlies"/>
+        <completeIn rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#League_Cup"/>
+        <completeIn rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Premier_League"/>
+        <teamNameRegion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">England</teamNameRegion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Liverpool -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Liverpool">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#TeamName"/>
+        <completeIn rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Champions_League"/>
+        <completeIn rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Club_Friendlies"/>
+        <completeIn rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Community_Shield"/>
+        <completeIn rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Premier_League"/>
+        <teamNameRegion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">England</teamNameRegion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Lloyd_Kelly -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Lloyd_Kelly">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/SoccerPlayer"/>
+        <playFor rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Bournemouth"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#int">24</age>
+        <height rdf:datatype="http://www.w3.org/2001/XMLSchema#int">178</height>
+        <position rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Defender</position>
+        <weight rdf:datatype="http://www.w3.org/2001/XMLSchema#int">70</weight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#London_Stadium -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#London_Stadium">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Stadium"/>
+        <isHostOf rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#West_Ham_United"/>
+        <capacity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">62500</capacity>
+        <location rdf:datatype="http://www.w3.org/2001/XMLSchema#string">London (Stratford)</location>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Luis_Díaz -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Luis_Díaz">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/SoccerPlayer"/>
+        <playFor rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Colombia"/>
+        <playFor rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Liverpool"/>
+        <playFor rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Porto"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#int">25</age>
+        <height rdf:datatype="http://www.w3.org/2001/XMLSchema#int">178</height>
+        <position rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Forward</position>
+        <weight rdf:datatype="http://www.w3.org/2001/XMLSchema#int">65</weight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Manchester_City -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Manchester_City">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#TeamName"/>
+        <completeIn rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Champions_League"/>
+        <completeIn rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Club_Friendlies"/>
+        <completeIn rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Community_Shield"/>
+        <completeIn rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Premier_League"/>
+        <teamNameRegion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">England</teamNameRegion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Manchester_United -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Manchester_United">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#TeamName"/>
+        <completeIn rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Club_Friendlies"/>
+        <completeIn rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Europa_League"/>
+        <completeIn rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Premier_League"/>
+        <teamNameRegion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">England</teamNameRegion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Marco_Silva -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Marco_Silva">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Manager"/>
+        <manageAt rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Fulham"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Mikel_Arteta -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Mikel_Arteta">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Manager"/>
+        <manageAt rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Arsenal"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Molineux_Stadium -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Molineux_Stadium">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Stadium"/>
+        <isHostOf rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Wolverhampton_Wanderers"/>
+        <capacity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">31750</capacity>
+        <location rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wolverhampton</location>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Moussa_Niakhaté -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Moussa_Niakhaté">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/SoccerPlayer"/>
+        <playFor rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Nottingham_Forest"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#int">26</age>
+        <height rdf:datatype="http://www.w3.org/2001/XMLSchema#int">190</height>
+        <position rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Defender</position>
+        <weight rdf:datatype="http://www.w3.org/2001/XMLSchema#int">82</weight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Neco_Williams -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Neco_Williams">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/SoccerPlayer"/>
+        <playFor rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Nottingham_Forest"/>
+        <playFor rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Wales"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#int">21</age>
+        <height rdf:datatype="http://www.w3.org/2001/XMLSchema#int">183</height>
+        <position rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Defender</position>
+        <weight rdf:datatype="http://www.w3.org/2001/XMLSchema#int">72</weight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Neto -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Neto">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/SoccerPlayer"/>
+        <playFor rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Bournemouth"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#int">33</age>
+        <height rdf:datatype="http://www.w3.org/2001/XMLSchema#int">190</height>
+        <position rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Goalkeeper</position>
+        <weight rdf:datatype="http://www.w3.org/2001/XMLSchema#int">84</weight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Newcastle_United -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Newcastle_United">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#TeamName"/>
+        <completeIn rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#League_Cup"/>
+        <completeIn rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Premier_League"/>
+        <teamNameRegion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">England</teamNameRegion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Norway -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Norway">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#TeamName"/>
+        <completeIn rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Int._Friendly"/>
+        <completeIn rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#UEFA_Nations_League_B"/>
+        <completeIn rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#World_Cup_Qualification_UEFA"/>
+        <teamNameRegion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Norway</teamNameRegion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Nottingham_Forest -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Nottingham_Forest">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#TeamName"/>
+        <completeIn rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Premier_League"/>
+        <teamNameRegion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">England</teamNameRegion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Old_Trafford -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Old_Trafford">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Stadium"/>
+        <isHostOf rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Manchester_United"/>
+        <capacity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">74310</capacity>
+        <location rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Manchester (Old Trafford)</location>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Pascal_Struijk -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Pascal_Struijk">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/SoccerPlayer"/>
+        <playFor rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Leeds_United"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#int">23</age>
+        <height rdf:datatype="http://www.w3.org/2001/XMLSchema#int">190</height>
+        <position rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Defender</position>
+        <weight rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</weight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Patrick_Vieira -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Patrick_Vieira">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Manager"/>
+        <manageAt rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Crystal_Palace"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Pep_Guardiola -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Pep_Guardiola">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Manager"/>
+        <manageAt rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Manchester_City"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Pierre-Emile_Højbjerg -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Pierre-Emile_Højbjerg">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/SoccerPlayer"/>
+        <playFor rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Denmark"/>
+        <playFor rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Tottenham_Hotspur"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#int">27</age>
+        <height rdf:datatype="http://www.w3.org/2001/XMLSchema#int">187</height>
+        <position rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Midfielder</position>
+        <weight rdf:datatype="http://www.w3.org/2001/XMLSchema#int">84</weight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Porto -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Porto">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#TeamName"/>
+        <completeIn rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Taça_de_Portugal"/>
+        <teamNameRegion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Portugal</teamNameRegion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Portugal -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Portugal">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#TeamName"/>
+        <completeIn rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#European_Championship"/>
+        <completeIn rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#UEFA_Nations_League_A"/>
+        <completeIn rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#World_Cup_Qualification_UEFA"/>
+        <teamNameRegion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Portugal</teamNameRegion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Premier_League -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Premier_League">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Tournament"/>
+        <teamNameRegion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">England</teamNameRegion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Ralph_Hasenhüttl -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Ralph_Hasenhüttl">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Manager"/>
+        <manageAt rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Southampton"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Reece_James -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Reece_James">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/SoccerPlayer"/>
+        <playFor rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Chelsea"/>
+        <playFor rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#England"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#int">22</age>
+        <height rdf:datatype="http://www.w3.org/2001/XMLSchema#int">182</height>
+        <position rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Defender</position>
+        <weight rdf:datatype="http://www.w3.org/2001/XMLSchema#int">82</weight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Roberto_De_Zerbi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Roberto_De_Zerbi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Manager"/>
+        <manageAt rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Brighton_&amp;_Hove_Albion"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Roberto_Firmino -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Roberto_Firmino">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/SoccerPlayer"/>
+        <playFor rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Brazil"/>
+        <playFor rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Liverpool"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#int">31</age>
+        <height rdf:datatype="http://www.w3.org/2001/XMLSchema#int">181</height>
+        <position rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Forward</position>
+        <weight rdf:datatype="http://www.w3.org/2001/XMLSchema#int">76</weight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Rúben_Neves -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Rúben_Neves">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/SoccerPlayer"/>
+        <playFor rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Portugal"/>
+        <playFor rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Wolves"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#int">25</age>
+        <height rdf:datatype="http://www.w3.org/2001/XMLSchema#int">180</height>
+        <position rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Midfielder</position>
+        <weight rdf:datatype="http://www.w3.org/2001/XMLSchema#int">80</weight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Selhurst_Park -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Selhurst_Park">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Stadium"/>
+        <isHostOf rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Crystal_Palace"/>
+        <capacity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">25486</capacity>
+        <location rdf:datatype="http://www.w3.org/2001/XMLSchema#string">London (Selhurst)</location>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Serbia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Serbia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#TeamName"/>
+        <completeIn rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Int._Friendly"/>
+        <completeIn rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#UEFA_Nations_League_B"/>
+        <completeIn rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#World_Cup_Qualification_UEFA"/>
+        <teamNameRegion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Serbia</teamNameRegion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Southampton -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Southampton">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#TeamName"/>
+        <completeIn rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Premier_League"/>
+        <teamNameRegion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">England</teamNameRegion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Sporting -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Sporting">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#TeamName"/>
+        <completeIn rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Taça_da_Liga"/>
+        <completeIn rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Taça_de_Portugal"/>
+        <teamNameRegion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Portugal</teamNameRegion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Stamford_Bridge -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Stamford_Bridge">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Stadium"/>
+        <isHostOf rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Chelsea"/>
+        <capacity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">40343</capacity>
+        <location rdf:datatype="http://www.w3.org/2001/XMLSchema#string">London (Fulham)</location>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Steve_Cooper -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Steve_Cooper">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Manager"/>
+        <manageAt rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Nottingham_Forest"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Steven_Gerrard -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Steven_Gerrard">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Manager"/>
+        <manageAt rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Aston_Villa"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Summer_Olympics_Qualifiers -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Summer_Olympics_Qualifiers">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Tournament"/>
+        <teamNameRegion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">International</teamNameRegion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Taça_da_Liga -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Taça_da_Liga">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Tournament"/>
+        <teamNameRegion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Portugal</teamNameRegion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Taça_de_Portugal -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Taça_de_Portugal">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Tournament"/>
+        <teamNameRegion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Portugal</teamNameRegion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Thiago_Silva -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Thiago_Silva">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/SoccerPlayer"/>
+        <playFor rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Brazil"/>
+        <playFor rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Chelsea"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#int">38</age>
+        <height rdf:datatype="http://www.w3.org/2001/XMLSchema#int">183</height>
+        <position rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Defender</position>
+        <weight rdf:datatype="http://www.w3.org/2001/XMLSchema#int">79</weight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Thomas_Frank -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Thomas_Frank">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Manager"/>
+        <manageAt rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Brentford"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Tomás_Soucek -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Tomás_Soucek">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/SoccerPlayer"/>
+        <playFor rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Czech_Republic"/>
+        <playFor rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#West_Ham_United"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#int">27</age>
+        <height rdf:datatype="http://www.w3.org/2001/XMLSchema#int">192</height>
+        <position rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Midfielder</position>
+        <weight rdf:datatype="http://www.w3.org/2001/XMLSchema#int">86</weight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Tottenham_Hotspur -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Tottenham_Hotspur">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#TeamName"/>
+        <completeIn rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Champions_League"/>
+        <completeIn rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Club_Friendlies"/>
+        <completeIn rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Premier_League"/>
+        <teamNameRegion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">England</teamNameRegion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Tottenham_Hotspur_Stadium -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Tottenham_Hotspur_Stadium">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Stadium"/>
+        <isHostOf rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Tottenham_Hotspur"/>
+        <capacity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">62850</capacity>
+        <location rdf:datatype="http://www.w3.org/2001/XMLSchema#string">London (Tottenham)</location>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#UEFA_Nations_League_A -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#UEFA_Nations_League_A">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Tournament"/>
+        <teamNameRegion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">International</teamNameRegion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#UEFA_Nations_League_B -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#UEFA_Nations_League_B">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Tournament"/>
+        <teamNameRegion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">International</teamNameRegion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Villa_Park -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Villa_Park">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Stadium"/>
+        <isHostOf rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Aston_Villa"/>
+        <capacity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">42657</capacity>
+        <location rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Birmingham</location>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Wales -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Wales">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#TeamName"/>
+        <completeIn rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#European_Championship"/>
+        <completeIn rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#UEFA_Nations_League_A"/>
+        <completeIn rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#World_Cup_Qualification_UEFA"/>
+        <teamNameRegion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wales</teamNameRegion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#West_Ham_United -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#West_Ham_United">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#TeamName"/>
+        <completeIn rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Conference_League"/>
+        <completeIn rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Premier_League"/>
+        <teamNameRegion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">England</teamNameRegion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Wilfried_Zaha -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Wilfried_Zaha">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/SoccerPlayer"/>
+        <playFor rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Crystal_Palace"/>
+        <playFor rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Ivory_Coast"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#int">29</age>
+        <height rdf:datatype="http://www.w3.org/2001/XMLSchema#int">180</height>
+        <position rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Forward</position>
+        <weight rdf:datatype="http://www.w3.org/2001/XMLSchema#int">66</weight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Wolverhampton_Wanderers -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Wolverhampton_Wanderers"/>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Wolves -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Wolves">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#TeamName"/>
+        <completeIn rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#League_Cup"/>
+        <completeIn rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Premier_League"/>
+        <teamNameRegion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">England</teamNameRegion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#World_Cup_Qualification_UEFA -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#World_Cup_Qualification_UEFA">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Tournament"/>
+        <teamNameRegion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">International</teamNameRegion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Youri_Tielemans -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Youri_Tielemans">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/SoccerPlayer"/>
+        <playFor rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Belgium"/>
+        <playFor rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Leicester_City"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#int">25</age>
+        <height rdf:datatype="http://www.w3.org/2001/XMLSchema#int">176</height>
+        <position rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Midfielder</position>
+        <weight rdf:datatype="http://www.w3.org/2001/XMLSchema#int">72</weight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Brighton_&amp;_Hove_Albion -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Brighton_&amp;_Hove_Albion">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#TeamName"/>
+        <completeIn rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Premier_League"/>
+        <teamNameRegion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">England</teamNameRegion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Gary_O&apos;Neil_(interim) -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Gary_O&apos;Neil_(interim)">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Manager"/>
+        <manageAt rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Bournemouth"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#James_Collins_Steve_Davis_(joint-caretakers) -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#James_Collins_Steve_Davis_(joint-caretakers)">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Manager"/>
+        <manageAt rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Wolverhampton_Wanderers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#St_James&apos;_Park -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#St_James&apos;_Park">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Stadium"/>
+        <isHostOf rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Newcastle_United"/>
+        <capacity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">52305</capacity>
+        <location rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Newcastle upon Tyne</location>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#St_Mary&apos;s_Stadium -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#St_Mary&apos;s_Stadium">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Stadium"/>
+        <isHostOf rdf:resource="http://www.semanticweb.org/caohainam/ontologies/2022/9/football-ontology#Southampton"/>
+        <capacity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">32384</capacity>
+        <location rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Southampton</location>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
